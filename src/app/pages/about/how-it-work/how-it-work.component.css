@@ -1,0 +1,25 @@
+.wraper{
+    min-height: 50vh;
+}
+.line{
+    min-height: 100%;
+
+}
+.right-item .icon-line{
+    left: -35px;
+}
+.left-item .icon-line{
+    right: -40px;
+}
+
+.icon-line{
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    border-radius: 150px;
+    top:5px;
+    background-color: #0f4bac;
+}
+.vertical-row{
+    border-radius: 15px;
+}

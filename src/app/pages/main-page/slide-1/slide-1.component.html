@@ -1,0 +1,45 @@
+<div #plane_id class=" container-fluid slide-3 " style="position: relative;">
+    <div class="row text-center">
+        <h2>This is easy how</h2>
+        <h4>This is easy how 1 2 3 ..</h4>
+    </div>
+    <img [@plane]="plane" id="plane"
+         style="transform:rotate(40deg); position: absolute; left: 50%; top: -160px;display: block"
+         src="/assets/image/plane.png"
+         height="80">
+    <img class="cloud" id="cloud" style="position: absolute; left: 10%; top:180px" src="/assets/image/the-cloud.png"
+         height="80">
+    <img id="sun" style="position: absolute; left: 60%; top:80px" src="/assets/image/sun.png" height="80">
+
+    <div [@images]="state" (@images.done)="state_f()" id="sl-3" class="container-fluid slide-content">
+
+        <div class="col-lg-6 col-md-7 col-md-offset-1 items">
+            <div *ngFor="let item of items_animate" item_number="1" class="item " [style.opacity]="state_finish">
+                <img src="{{ item.path }}">
+                <p class="text-center">{{item.description}}</p>
+            </div>
+        </div>
+
+        <div class="col-md-4 ">
+            <div   id="slide" class="pics">
+                <div [@slider]="slider_state" (@slider.done)="onEnd($event)"  class="row text-center" style="position: relative">
+                    <img *ngFor="let slide of slider_img"  class=" big_item" [src]="slide.path"
+                         style="border-radius: 100%; width: 0; height: 0;opacity: 0; position: absolute;left: -1%">
+                    <!--338-->
+                    <!--src="/assets/image/learn-korean.png"-->
+
+                    <!--<p>{{slide.description}}</p>-->
+                </div>
+                <!--<div class="row text-center">-->
+
+                <!--<img class=" big_item" src="/assets/image/learn-portuguese.png" height="338" width="338"-->
+                <!--style="border-radius: 100%">-->
+                <!--<p>Реєструйтесь на перший безкоштовний урок</p>-->
+
+                <!--</div>-->
+            </div>
+
+
+        </div>
+    </div>
+</div>

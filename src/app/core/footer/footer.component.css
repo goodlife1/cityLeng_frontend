@@ -1,0 +1,21 @@
+.contact-form{
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #0d6aad;
+}
+.form-control{
+    margin-top: 5px;
+}
+.submit{
+    margin-top: 5px;
+    min-width: 10vw;
+}
+button:focus {
+    outline:none !important;
+    border-color: transparent;
+    background-color: #5CB85C;
+}
+p{
+    color:white;
+}
