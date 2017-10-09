@@ -1,0 +1,26 @@
+.item-m{
+    display: inline-block;
+    min-height: 300px;
+    width: 100%;
+    margin: 50px 0 50px 0;
+    background-color: whitesmoke;
+}
+.item-box{
+    display: flex;
+    align-items: center;
+    min-height: 110vh;
+    margin-top: 50px;
+    background: no-repeat fixed center;
+    background-size: 100vw;
+}
+
+.content{
+    display: block;
+    min-width: 100vh;
+    overflow-x: hidden;
+    min-height: 150vh;
+    margin-top: 0;
+}
+.content .item-box:first-child{
+    margin-top: 1px;
+}

@@ -1,8 +1,7 @@
 .contact-form{
-    margin-top: 25px;
+    margin-top: 5px;
     padding: 15px;
     border-radius: 15px;
-    background-color: #0d6aad;
 }
 .form-control{
     margin-top: 5px;
@@ -18,4 +17,12 @@ button:focus {
 }
 p{
     color:white;
+}
+li{
+    color: white;
+    list-style: none;
+}
+a{
+    color: white;
+    text-decoration: none;
 }

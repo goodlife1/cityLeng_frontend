@@ -1,0 +1,27 @@
+.item{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    min-height: 350px;
+    padding: 5px;
+    box-shadow:0 0 10px #0d6aad;
+    overflow-x: hidden;
+}
+
+.title{
+    user-select: none;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: 25px;
+    color: white;
+    background-color: #0f4bac;
+}
+.item:hover{
+    box-shadow:0 0 20px #0d6aad;
+}
+.inviteng{
+    display: block;
+    min-height: 150px;
+    background-color: gray;
+    margin-bottom: 50px;
+}

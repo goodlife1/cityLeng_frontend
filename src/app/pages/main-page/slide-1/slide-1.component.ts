@@ -112,9 +112,7 @@ export class Slide1Component implements OnInit {
     public state_finish = 0;
     public slider_img =
         [
-            {path: '/assets/image/first_item.png', description: 'lorem this 1 is spar'},
-            {path: '/assets/image/learn-portuguese.png', description: 'lorem this 2 is spar'},
-            {path: '/assets/image/first_item.png', description: 'lorem this 3 is spar'},
+            {path: '/assets/image/learn-korean.png', description: 'lorem this 3 is spar'},
             {path: '/assets/image/learn-portuguese.png', description: 'lorem this 2 is spar'},
 
         ];
@@ -126,7 +124,7 @@ export class Slide1Component implements OnInit {
 
     @HostListener('window:scroll', ['$event'])
     public onWindowScroll(event: Event): void {
-        (this.id_plane.nativeElement.offsetTop - (window.outerHeight * 0.1)) <= document.body.scrollTop && !this.count_init ? this.images_item() : '';
+        (this.id_plane.nativeElement.offsetTop - (window.outerHeight * 0.1)) <= window.pageYOffset && !this.count_init ? this.images_item() : '';
     }
 
     constructor(private _el: ElementRef) {

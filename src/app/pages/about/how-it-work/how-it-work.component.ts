@@ -1,5 +1,6 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 import {trigger, transition, query, style, stagger, animate} from "@angular/animations";
+import {NavigationEnd , Router} from "@angular/router";
 
 @Component({
   selector: 'app-how-it-work',
@@ -14,7 +15,9 @@ import {trigger, transition, query, style, stagger, animate} from "@angular/anim
           animate('800ms 1.2s ease-out', style({ opacity: 1, transform: 'translateX(0)' })),
         ])),
         query('.icon-line', stagger('500ms', [
-          animate('800ms .2s ease-out', style({ opacity: 1})),
+          animate('800ms .2s ease-out', style({
+            opacity: 1,
+          })),
         ]))
 
       ])
@@ -23,10 +26,9 @@ import {trigger, transition, query, style, stagger, animate} from "@angular/anim
 })
 export class HowItWorkComponent implements OnInit {
 @ViewChild('leftColum') leftColum;
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
-
 
   }
 

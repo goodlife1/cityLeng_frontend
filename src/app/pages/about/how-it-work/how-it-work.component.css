@@ -11,14 +11,18 @@
 .left-item .icon-line{
     right: -40px;
 }
-
+.fa-icon{
+    font-size: 50px;
+    margin-top: 20%;
+}
 .icon-line{
     width: 75px;
     height: 75px;
     position: absolute;
     border-radius: 150px;
+    border: 1px solid silver;
     top:5px;
-    background-color: #0f4bac;
+    background-color: white;
 }
 .vertical-row{
     border-radius: 15px;

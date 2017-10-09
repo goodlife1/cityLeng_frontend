@@ -17,5 +17,9 @@ export class PagesContentService {
         return this.http.get(this.gv.host + 'page', {search: params});
     }
 
+    get_http(path){
+        return this.http.get(this.gv.host+path);
+    }
+
 
 }

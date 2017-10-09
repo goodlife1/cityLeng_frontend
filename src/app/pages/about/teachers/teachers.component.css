@@ -1,0 +1,8 @@
+.col-md-2{
+    min-height: 150px;
+    margin: 15px;
+    background-color: yellow;
+}
+.row{
+    margin-left: 50px;
+}
